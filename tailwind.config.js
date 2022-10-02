@@ -8,7 +8,8 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        sans:['Montserrat', 'sans-serif'],
+        sans:['Gill Sans', 'sans-serif'],
+        lato:['Lato', 'sans-serif']
       },
       letterSpacing: {
         widest: '.19em',
