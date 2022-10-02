@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Rainery
-![app-logo](https://user-images.githubusercontent.com/84629565/193455709-7b6ba348-328d-418b-8d66-da9e00692ce8.png)
-> Rainey is a weather app that will display a list of cities. User can click on a city and have an 8 day weather forcast for that city
+# Heroic
+![app-logo](https://user-images.githubusercontent.com/84629565/193475807-8ae7aa33-8d24-4554-a8dc-8e07eb9eb08e.png)
+> Heroic is a web app that will display a list of random 20 heroes. User can click on a hero card and have all his details in a separate page.
 
 
 ## Built With
