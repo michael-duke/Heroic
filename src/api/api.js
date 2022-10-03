@@ -11,8 +11,24 @@ const options = {
 const api = {
   fetchHeroes: async () => {
     const response = await fetch(heroesURL, options);
-    const heroes = await response.json();
-    console.log(heroes);
+    const data = await response.json();
+    const heroes = data.map(
+      ({
+        id,
+        name,
+        slug,
+        images: { lg: image },
+        biography: { firstAppearance, publisher },
+      }) => ({
+        id,
+        name,
+        slug,
+        image,
+        firstAppearance,
+        publisher,
+      }),
+    );
+    return heroes;
   },
 };
 
