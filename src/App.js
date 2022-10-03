@@ -1,12 +1,19 @@
 import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import api from './api/api';
+import Navbar from './components/Navbar';
+import Details from './pages/Details';
+import Home from './pages/Home';
 
 function App() {
-  api.fetchHeroes();
+  const location = useLocation();
   return (
     <div className="App">
-      Hello
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route exact path={location.pathname} element={<Details />} />
+      </Routes>
     </div>
   );
 }
