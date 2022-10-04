@@ -6,10 +6,12 @@ import {
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import heroesReducer from './heroes/heroeSlice';
+import currentHeroReducer from './currentHero/currentHeroSlice';
 
 // root Reducer
 const rootReducer = combineReducers({
   heroes: heroesReducer,
+  currentHero: currentHeroReducer,
 });
 
 // Redux store

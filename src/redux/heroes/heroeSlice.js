@@ -8,7 +8,6 @@ const initialState = {
   heroes: [],
   status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
   error: null,
-  message: 'hero',
 };
 
 // Thunks
@@ -46,6 +45,5 @@ const heroesSlice = createSlice({
 
 export const allHeroes = (state) => state.heroes.heroes;
 export const allStatus = (state) => state.heroes.status;
-export const allMesssages = (state) => state.heroes.message;
 
 export default heroesSlice.reducer;
