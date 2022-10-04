@@ -1,4 +1,6 @@
-const heroesURL = 'https://superhero-search.p.rapidapi.com/api/heroes';
+const baseURL = 'https://superhero-search.p.rapidapi.com/api/';
+const heroesURL = `${baseURL}heroes`;
+const heroURL = `${baseURL}?hero=`;
 
 const options = {
   method: 'GET',
@@ -29,6 +31,11 @@ const api = {
       }),
     );
     return heroes;
+  },
+  fetchCurrentHero: async (name) => {
+    const response = await fetch(heroURL + name, options);
+    const hero = await response.json();
+    return hero;
   },
 };
 
