@@ -8,6 +8,7 @@ const HeroesContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    document.title = 'Heroic';
     if (heroes.length === 0) dispatch(getHeroes());
   }, []);
 
