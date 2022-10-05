@@ -10,6 +10,7 @@ const HeroList = ({ heroes }) => (
       }) => (
         <HeroCard
           key={id}
+          id={id}
           name={name}
           image={image}
           slug={slug}

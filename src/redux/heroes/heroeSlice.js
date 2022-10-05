@@ -6,6 +6,7 @@ const GET_HEROES = 'GET_HEROES';
 
 const initialState = {
   heroes: [],
+  filteredHeroes: [],
   status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
   error: null,
 };
@@ -23,7 +24,16 @@ export const getHeroes = createAsyncThunk(GET_HEROES, async () => {
 const heroesSlice = createSlice({
   name: 'heroes',
   initialState,
-  reducers: {},
+  reducers: {
+    filterHeroes: (state, action) => ({
+      ...state,
+      filteredHeroes: [...state.heroes.filter(({ publisher }) => publisher === action.payload)],
+    }),
+    load20Heroes: (state, action) => ({
+      ...state,
+      filteredHeroes: action.payload,
+    }),
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getHeroes.pending, (state) => ({
@@ -43,7 +53,9 @@ const heroesSlice = createSlice({
   },
 });
 
+export const { filterHeroes, load20Heroes } = heroesSlice.actions;
 export const allHeroes = (state) => state.heroes.heroes;
+export const allFilteredHeroes = (state) => state.heroes.filteredHeroes;
 export const allStatus = (state) => state.heroes.status;
 
 export default heroesSlice.reducer;
