@@ -5,7 +5,7 @@ const heroURL = `${baseURL}?hero=`;
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '453f81df11mshba8fa41bb162304p159da5jsn21e417a6277a',
+    'X-RapidAPI-Key': 'c8c57b7133msh9454a188ade3c59p147403jsnc8d160df0d72',
     'X-RapidAPI-Host': 'superhero-search.p.rapidapi.com',
   },
 };
