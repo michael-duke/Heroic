@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { allHeroes, getHeroes, allStatus } from '../redux/heroes/heroeSlice';
+import {
+  allHeroes, allFilteredHeroes, getHeroes, allStatus,
+} from '../redux/heroes/heroeSlice';
 import { cleanupHero } from '../redux/currentHero/currentHeroSlice';
 import HeroList from './HeroList';
 import Loading from './Loading';
 import RefreshHeroes from './RefreshHeroes';
+import HeroForm from './HeroForm';
 
 const HeroesContainer = () => {
   const heroes = useSelector(allHeroes);
+  const filteredHeroes = useSelector(allFilteredHeroes);
   const status = useSelector(allStatus);
   const dispatch = useDispatch();
 
@@ -17,12 +21,24 @@ const HeroesContainer = () => {
     dispatch(cleanupHero({})); // prevents info leak
   }, [dispatch]);
 
+  const getPublishers = () => [...new Set(heroes.map(({ publisher }) => {
+    if (!publisher) return 'No Publisher';
+    return publisher;
+  }))];
+
+  const getHeroesToRender = () => (filteredHeroes.length === 0 ? heroes : filteredHeroes);
   return (
     <>
+
       <RefreshHeroes />
       {status === 'loading' ? <Loading />
 
-        : <HeroList heroes={heroes} />}
+        : (
+          <>
+            <HeroForm publishers={getPublishers()} />
+            <HeroList heroes={getHeroesToRender()} />
+          </>
+        )}
     </>
   );
 };
