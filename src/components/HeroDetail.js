@@ -15,7 +15,7 @@ const HeroDetail = ({
   const statColors = {
     intelligence: 'blue-500',
     strength: 'blue-gray-500',
-    speed: 'amber-300',
+    speed: 'amber-800',
     durability: 'green-500',
     power: 'red-500',
     combat: 'purple-500',

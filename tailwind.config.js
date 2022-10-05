@@ -16,6 +16,8 @@ module.exports = withMT({
       },
       colors: {
         heroblue: '#137dc5',
+        herored: '#bf1922',
+        speed: '#fbbf24',
       },
       screens: {
         sm: { max: '768px' },

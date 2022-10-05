@@ -7,7 +7,7 @@ const HeroCard = ({
 }) => (
   <>
     <NavLink to={`/heroes/${slug}`}>
-      <div data-mdb-ripple="true" data-mdb-ripple-color="light" className="hero-card flex">
+      <div data-mdb-ripple="true" data-mdb-ripple-color="light" className="hero-card flex hover:scale-105">
         <div className="rounded-lg shadow-lg bg-white max-w-sm flex flex-col justify-between">
           <div className="relative">
             <img className="rounded-t-lg" src={image} alt={`img-${slug}`} />
