@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Tooltip } from '@material-tailwind/react';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
-import { getHeroes } from '../redux/heroes/heroeSlice';
+import { getHeroes } from '../redux/heroes/heroesSlice';
 
 const RefreshHeroes = () => {
   const dispatch = useDispatch();

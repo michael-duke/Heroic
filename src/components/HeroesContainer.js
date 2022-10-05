@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   allHeroes, allFilteredHeroes, getHeroes, allStatus,
-} from '../redux/heroes/heroeSlice';
+} from '../redux/heroes/heroesSlice';
 import { cleanupHero } from '../redux/currentHero/currentHeroSlice';
 import HeroList from './HeroList';
 import Loading from './Loading';
