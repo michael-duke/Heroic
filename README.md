@@ -2,7 +2,7 @@
 
 # Heroic
 ![app-logo](https://user-images.githubusercontent.com/84629565/193475807-8ae7aa33-8d24-4554-a8dc-8e07eb9eb08e.png)
-> Heroic is a web app that will display a list of random 20 heroes. User can click on a hero card and have all his details in a separate page.
+> Heroic is a web app that will display a list of random 20 heroes from [SuperHero Search API](https://rapidapi.com/jakash1997/api/superhero-search). User can click on a hero card and have all his details in a separate page, and filter by publisher as well.
 
 
 ## Built With
@@ -12,6 +12,12 @@
 - Linters:
   - Stylelint, ESLint
 
+## Website Mockup 📱 💻 🖥️
+![screenshot](https://user-images.githubusercontent.com/84629565/194259458-f3290af5-bd82-476a-8b48-1d1613b76a9b.png)
+![screenshot](https://user-images.githubusercontent.com/84629565/194256201-c017419d-e113-48d6-bf1d-54a01196f288.png)
+![screenshot](https://user-images.githubusercontent.com/84629565/194258168-84d4c9ca-c28f-4e5b-9649-ca8ee011d111.png)
+![screenshot](https://user-images.githubusercontent.com/84629565/194259804-d846a7d0-ffa3-4013-951f-6ae29b96c729.png)
+![screenshot](https://user-images.githubusercontent.com/84629565/194258745-85403f8d-1dd5-4761-a394-044bf79d42b9.png)
 ## Live Demo 
 
 in progress :smile: 
@@ -55,9 +61,12 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+![superhero search](https://user-images.githubusercontent.com/84629565/194167420-de262734-2b2f-432c-adfa-9537aa6e4651.png) SuperHero Search from [Akash Joshi](https://rapidapi.com/user/jakash1997)
+
 - [Microverse](https://microverse.org)
 - Inspiration
-
+   - [Ismail Coor](https://github.com/Ismailco)
+   - [Vitor Guedes Madeira](https://github.com/VitorGuedesMadeira) 
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
