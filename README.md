@@ -12,6 +12,10 @@
 - Linters:
   - Stylelint, ESLint
 
+## Project Documentation
+
+- Here is the [link](https://drive.google.com/file/d/1rhj1TQRfJMoJMf5Wv0dpQ7_OuYLddy3m/view?usp=sharing) to my Zoom video presentation
+
 ## Website Mockup 📱 💻 🖥️
 ![screenshot](https://user-images.githubusercontent.com/84629565/194259458-f3290af5-bd82-476a-8b48-1d1613b76a9b.png)
 ![screenshot](https://user-images.githubusercontent.com/84629565/194256201-c017419d-e113-48d6-bf1d-54a01196f288.png)
@@ -20,7 +24,7 @@
 ![screenshot](https://user-images.githubusercontent.com/84629565/194258745-85403f8d-1dd5-4761-a394-044bf79d42b9.png)
 ## Live Demo 
 
-in progress :smile: 
+Checkout [Heroic](https://heroic-2112.herokuapp.com/) :smile: 
 
 
 ## Getting Started
@@ -34,6 +38,7 @@ To get a local copy up and running follow these simple example steps.
 Have NodeJS installed and follow the next steps
 ### Usage
 - `npm i` for installing dev dependecies
+- Make sure to use your own API key simply naviagate to `src/api/api.js` and modify the headers
 - `npm run build` or `npm start` to see the project
 ### Run tests
 - `npm test`
@@ -67,6 +72,12 @@ Give a ⭐️ if you like this project!
 - Inspiration
    - [Ismail Coor](https://github.com/Ismailco)
    - [Vitor Guedes Madeira](https://github.com/VitorGuedesMadeira) 
+
+Under the the [Creative Commons liscense](https://creativecommons.org/licenses/by-nc/4.0/)
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/84629565/181086933-d5bcdb09-da51-40f6-b0f8-a1f191614257.png">
+
+Original design from [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
