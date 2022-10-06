@@ -1,0 +1,562 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroDetail tests HeroDetail component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex sm:flex-col gap-4 w-fit mx-auto"
+      >
+        <img
+          alt="img-620-spider-man"
+          src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/620-spider-man.jpg"
+        />
+        <div
+          class="hero-info w-96 text-left"
+        >
+          <h2
+            class="text-3xl underline text-blue-500"
+          >
+            Spider-Man
+          </h2>
+          <h3
+            class="text-2xl"
+          >
+            PowerStats:
+          </h3>
+          <div
+            class="sm:inline-flex gap-3 flex-wrap"
+          >
+            <h4
+              class="bg-blue-500 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              intelligence
+              <span
+                class="ml-3"
+              >
+                90
+              </span>
+            </h4>
+            <h4
+              class="bg-blue-gray-500 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              strength
+              <span
+                class="ml-3"
+              >
+                55
+              </span>
+            </h4>
+            <h4
+              class="bg-amber-800 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              speed
+              <span
+                class="ml-3"
+              >
+                67
+              </span>
+            </h4>
+            <h4
+              class="bg-green-500 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              durability
+              <span
+                class="ml-3"
+              >
+                75
+              </span>
+            </h4>
+            <h4
+              class="bg-red-500 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              power
+              <span
+                class="ml-3"
+              >
+                74
+              </span>
+            </h4>
+            <h4
+              class="bg-purple-500 rounded p-0.5 text-white w-fit mb-2"
+              data-testid="powerstats"
+            >
+              combat
+              <span
+                class="ml-3"
+              >
+                85
+              </span>
+            </h4>
+          </div>
+          <div
+            class="biography"
+          >
+            <h3
+              class="text-2xl"
+            >
+              Bio:
+            </h3>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              Fullname:
+            </h4>
+            <p>
+              Peter Parker
+            </p>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              Aliases:
+            </h4>
+            <div
+              class="inline-flex gap-2 flex-wrap"
+            >
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Spiderman
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Bag-Man
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Black Marvel
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Captain Universe
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Dusk
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Green Hood
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Hornet
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Mad Dog 336
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Peter Palmer
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Prodigy
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Ricochet
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Scarlet Spider
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Spider-Boy
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Spider-Hulk
+              </span>
+              <span
+                class="bg-gray-500 text-white p-0.5"
+              >
+                Spider-Morphosis
+              </span>
+            </div>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              Place of Birth:
+            </h4>
+            <p>
+              New York, New York
+            </p>
+          </div>
+          <div
+            class="connections"
+          >
+            <h3
+              class="text-2xl"
+            >
+              Connections:
+            </h3>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              affiliation:
+            </h4>
+            <p>
+              Member of the Avengers, formerly member of Outlaws, alternate Fantastic Four
+            </p>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              relatives
+            </h4>
+            <p>
+              Richard Parker (father, deceased), Mary Parker(mother, deceased), Benjamin Parker (uncle, deceased), May Parker (aunt), Mary Jane Watson-Parker (wife), May Parker (daughter, allegedly deceased)
+            </p>
+          </div>
+          <div
+            class="work"
+          >
+            <h3
+              class="text-2xl"
+            >
+              Work:
+            </h3>
+            <h4
+              class="text-xl capitalize underline"
+            >
+              occupation:
+            </h4>
+            <p />
+            <h4
+              class="text-xl capitalize underline"
+            >
+              base
+            </h4>
+            <p>
+              New York, New York
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex sm:flex-col gap-4 w-fit mx-auto"
+    >
+      <img
+        alt="img-620-spider-man"
+        src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/620-spider-man.jpg"
+      />
+      <div
+        class="hero-info w-96 text-left"
+      >
+        <h2
+          class="text-3xl underline text-blue-500"
+        >
+          Spider-Man
+        </h2>
+        <h3
+          class="text-2xl"
+        >
+          PowerStats:
+        </h3>
+        <div
+          class="sm:inline-flex gap-3 flex-wrap"
+        >
+          <h4
+            class="bg-blue-500 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            intelligence
+            <span
+              class="ml-3"
+            >
+              90
+            </span>
+          </h4>
+          <h4
+            class="bg-blue-gray-500 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            strength
+            <span
+              class="ml-3"
+            >
+              55
+            </span>
+          </h4>
+          <h4
+            class="bg-amber-800 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            speed
+            <span
+              class="ml-3"
+            >
+              67
+            </span>
+          </h4>
+          <h4
+            class="bg-green-500 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            durability
+            <span
+              class="ml-3"
+            >
+              75
+            </span>
+          </h4>
+          <h4
+            class="bg-red-500 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            power
+            <span
+              class="ml-3"
+            >
+              74
+            </span>
+          </h4>
+          <h4
+            class="bg-purple-500 rounded p-0.5 text-white w-fit mb-2"
+            data-testid="powerstats"
+          >
+            combat
+            <span
+              class="ml-3"
+            >
+              85
+            </span>
+          </h4>
+        </div>
+        <div
+          class="biography"
+        >
+          <h3
+            class="text-2xl"
+          >
+            Bio:
+          </h3>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            Fullname:
+          </h4>
+          <p>
+            Peter Parker
+          </p>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            Aliases:
+          </h4>
+          <div
+            class="inline-flex gap-2 flex-wrap"
+          >
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Spiderman
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Bag-Man
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Black Marvel
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Captain Universe
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Dusk
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Green Hood
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Hornet
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Mad Dog 336
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Peter Palmer
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Prodigy
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Ricochet
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Scarlet Spider
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Spider-Boy
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Spider-Hulk
+            </span>
+            <span
+              class="bg-gray-500 text-white p-0.5"
+            >
+              Spider-Morphosis
+            </span>
+          </div>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            Place of Birth:
+          </h4>
+          <p>
+            New York, New York
+          </p>
+        </div>
+        <div
+          class="connections"
+        >
+          <h3
+            class="text-2xl"
+          >
+            Connections:
+          </h3>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            affiliation:
+          </h4>
+          <p>
+            Member of the Avengers, formerly member of Outlaws, alternate Fantastic Four
+          </p>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            relatives
+          </h4>
+          <p>
+            Richard Parker (father, deceased), Mary Parker(mother, deceased), Benjamin Parker (uncle, deceased), May Parker (aunt), Mary Jane Watson-Parker (wife), May Parker (daughter, allegedly deceased)
+          </p>
+        </div>
+        <div
+          class="work"
+        >
+          <h3
+            class="text-2xl"
+          >
+            Work:
+          </h3>
+          <h4
+            class="text-xl capitalize underline"
+          >
+            occupation:
+          </h4>
+          <p />
+          <h4
+            class="text-xl capitalize underline"
+          >
+            base
+          </h4>
+          <p>
+            New York, New York
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
