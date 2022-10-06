@@ -5,7 +5,7 @@ import {
 } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import heroesReducer from './heroes/heroeSlice';
+import heroesReducer from './heroes/heroesSlice';
 import currentHeroReducer from './currentHero/currentHeroSlice';
 
 // root Reducer

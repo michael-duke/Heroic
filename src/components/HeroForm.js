@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Select, Option } from '@material-tailwind/react';
-import { filterHeroes, load20Heroes } from '../redux/heroes/heroeSlice';
+import { filterHeroes, load20Heroes } from '../redux/heroes/heroesSlice';
 
 const HeroForm = ({ publishers }) => {
   const [publisher, setPublisher] = useState('');

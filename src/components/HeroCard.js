@@ -45,9 +45,6 @@ HeroCard.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   firstAppearance: PropTypes.string.isRequired,
-  publisher: PropTypes.string,
-};
-HeroCard.defaultProps = {
-  publisher: 'No publisher',
+  publisher: PropTypes.string.isRequired,
 };
 export default HeroCard;

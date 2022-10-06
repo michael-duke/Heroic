@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import HeroCard from './HeroCard';
 
 const HeroList = ({ heroes }) => (
-  <div className="Hero-Grid grid gap-4">
+  <div className="Hero-Grid grid gap-6">
     {heroes.map(
       ({
         id, slug, name, image, firstAppearance, publisher,
