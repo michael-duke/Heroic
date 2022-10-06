@@ -41,6 +41,7 @@ const HeroDetail = ({
         <div className="sm:inline-flex gap-3 flex-wrap">
           {Object.keys(powerstats).map((stat) => (
             <h4
+              data-testid="powerstats"
               className={`bg-${statColors[stat]} rounded p-0.5 text-white w-fit mb-2`}
               key={stat}
             >
