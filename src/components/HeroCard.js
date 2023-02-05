@@ -6,7 +6,7 @@ const HeroCard = ({
   id, slug, name, image, firstAppearance, publisher,
 }) => (
   <>
-    <NavLink to={`/heroes/${slug}`}>
+    <NavLink to={`/hero-details/${name}`}>
       <div data-mdb-ripple="true" data-mdb-ripple-color="light" className="hero-card flex hover:scale-105">
         <div className="rounded-lg shadow-lg bg-white max-w-sm flex flex-col justify-between">
           <div className="relative">

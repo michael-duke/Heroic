@@ -56,7 +56,7 @@ const HeroDetail = ({
           <p>{fullName}</p>
           <h4 className="text-xl capitalize underline">Aliases:</h4>
           <div className="inline-flex gap-2 flex-wrap">
-            {aliases.map((alias) => (
+            {[...new Set(aliases)].map((alias) => (
               <span className="bg-gray-500 text-white p-0.5" key={alias}>
                 {alias}
               </span>

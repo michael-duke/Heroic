@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import {
   currentHero,
   getHero,
-  currentHeroStatus,
-} from '../redux/currentHero/currentHeroSlice';
+  allStatus as currentHeroStatus,
+} from '../redux/heroes/heroesSlice';
 import HeroDetail from './HeroDetail';
 import Loading from './Loading';
 
-const HeroContainer = ({ hero }) => {
+const HeroContainer = () => {
+  const { hero } = useParams();
   const heroDetails = useSelector(currentHero);
   const dispatch = useDispatch();
   const status = useSelector(currentHeroStatus);
@@ -20,9 +21,9 @@ const HeroContainer = ({ hero }) => {
   );
 
   useEffect(() => {
-    document.title = `Heroic | ${toTitleCase(hero.replace('-', ' '))}`;
+    document.title = `Heroic | ${toTitleCase(hero)}`;
     dispatch(getHero(hero));
-  }, [hero]);
+  }, []);
 
   const renderHeroDetail = () => {
     const {
@@ -49,17 +50,7 @@ const HeroContainer = ({ hero }) => {
       />
     );
   };
-  return (
-    <>
-      {status === 'succeeded' ? renderHeroDetail() : (
-        <Loading />
-      )}
-    </>
-  );
-};
-
-HeroContainer.propTypes = {
-  hero: PropTypes.string.isRequired,
+  return <>{status === 'succeeded' ? renderHeroDetail() : <Loading />}</>;
 };
 
 export default HeroContainer;

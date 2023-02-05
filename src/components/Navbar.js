@@ -7,7 +7,7 @@ const Navbar = ({ slug }) => (
   <nav className="fixed-top w-1/2 mx-auto sm:w-full flex justify-between items-center border px-4 sl:px-2 border-gray-500 mb-8 bg-white">
     <NavLink end to="/">
       <h2 className="uppercase text-4xl sl:text-3xl tracking-widest">
-        {slug.includes('heroes') ? 'back' : 'home'}
+        {slug.includes('hero-details') ? 'back' : 'home'}
       </h2>
     </NavLink>
     <div>
