@@ -3,10 +3,12 @@ import api from '../../api/api';
 
 // Actions
 const GET_HEROES = 'GET_HEROES';
+const GET_CURRENT_HERO = 'GET_CURRENT_HERO';
 
 const initialState = {
   heroes: [],
   filteredHeroes: [],
+  hero: {},
   status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
   error: null,
 };
@@ -15,6 +17,14 @@ const initialState = {
 export const getHeroes = createAsyncThunk(GET_HEROES, async () => {
   try {
     return await api.fetchHeroes();
+  } catch (error) {
+    return error.message;
+  }
+});
+
+export const getHero = createAsyncThunk(GET_CURRENT_HERO, async (hero) => {
+  try {
+    return await api.fetchCurrentHero(hero);
   } catch (error) {
     return error.message;
   }
@@ -33,6 +43,11 @@ const heroesSlice = createSlice({
       ...state,
       filteredHeroes: action.payload,
     }),
+    cleanupHero: (state) => ({
+      ...state,
+      hero: {},
+      status: 'idle',
+    }),
   },
   extraReducers: (builder) => {
     builder
@@ -49,13 +64,28 @@ const heroesSlice = createSlice({
         ...state,
         status: 'failed',
         error: action.error.message,
+      }))
+      .addCase(getHero.pending, (state) => ({
+        ...state,
+        status: 'loading',
+      }))
+      .addCase(getHero.fulfilled, (state, action) => ({
+        ...state,
+        hero: action.payload,
+        status: 'succeeded',
+      }))
+      .addCase(getHero.rejected, (state, action) => ({
+        ...state,
+        status: 'failed',
+        error: action.error.message,
       }));
   },
 });
 
-export const { filterHeroes, load20Heroes } = heroesSlice.actions;
+export const { filterHeroes, load20Heroes, cleanupHero } = heroesSlice.actions;
 export const allHeroes = (state) => state.heroes.heroes;
 export const allFilteredHeroes = (state) => state.heroes.filteredHeroes;
+export const currentHero = (state) => state.heroes.hero;
 export const allStatus = (state) => state.heroes.status;
 
 export default heroesSlice.reducer;
