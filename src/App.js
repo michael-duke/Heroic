@@ -12,7 +12,7 @@ function App() {
       <Navbar slug={slug} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route exact path={slug} element={<Details slug={slug} />} />
+        <Route path="hero-details/:hero" element={<Details />} />
       </Routes>
     </div>
   );
