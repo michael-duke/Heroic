@@ -15,7 +15,7 @@ describe('Test for Navbar component', () => {
   });
 
   test('Check for heading in the navbar \'Back\' is in the document', () => {
-    const slug = '/heroes/212-michael-duke';
+    const slug = '/hero-details/michael-duke';
     render(
       <Router>
         <Navbar slug={slug} />

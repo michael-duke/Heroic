@@ -4,31 +4,9 @@ exports[`HeroContainer test 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <div
-        class="spinner-grow inline-block w-12 h-12 bg-[#bf1922] rounded-full opacity-0"
-        role="status"
-      >
-        <span
-          class="visually-hidden"
-        >
-          Loading...
-        </span>
-      </div>
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <div
-      class="spinner-grow inline-block w-12 h-12 bg-[#bf1922] rounded-full opacity-0"
-      role="status"
-    >
-      <span
-        class="visually-hidden"
-      >
-        Loading...
-      </span>
-    </div>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

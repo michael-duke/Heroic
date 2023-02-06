@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import store from '../redux/configureStore';
 import HeroContainer from '../components/HeroContainer';
 
@@ -10,7 +10,12 @@ test('HeroContainer test', async () => {
     <React.StrictMode>
       <Provider store={store}>
         <Router>
-          <HeroContainer hero="captain-america" />
+          <Routes>
+            <Route
+              path="hero-details/michael-duke"
+              element={<HeroContainer />}
+            />
+          </Routes>
         </Router>
       </Provider>
     </React.StrictMode>,
