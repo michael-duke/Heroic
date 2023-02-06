@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
-  allHeroes, allFilteredHeroes, getHeroes, allStatus, cleanupHero,
+  allHeroes,
+  allFilteredHeroes,
+  getHeroes,
+  allStatus,
+  cleanupHero,
 } from '../redux/heroes/heroesSlice';
 import HeroList from './HeroList';
 import Loading from './Loading';
@@ -14,27 +18,32 @@ const HeroesContainer = () => {
   const status = useSelector(allStatus);
   const dispatch = useDispatch();
 
+  const cleanup = () => {
+    if (heroes.length > 0 || filteredHeroes.length > 0) dispatch(cleanupHero());
+    // prevents info leak
+  };
   useEffect(() => {
     document.title = 'Heroic';
     if (heroes.length === 0) dispatch(getHeroes());
-    dispatch(cleanupHero()); // prevents info leak
-  }, [dispatch]);
+    cleanup();
+  }, [heroes, filteredHeroes]);
 
-  const getPublishers = () => [...new Set(heroes.map(({ publisher }) => publisher))];
+  const getPublishers = () => [
+    ...new Set(heroes.map(({ publisher }) => publisher)),
+  ];
 
   const getHeroesToRender = () => (filteredHeroes.length === 0 ? heroes : filteredHeroes);
   return (
     <>
-
       <RefreshHeroes />
-      {status === 'loading' ? <Loading />
-
-        : (
-          <>
-            <HeroForm publishers={getPublishers()} />
-            <HeroList heroes={getHeroesToRender()} />
-          </>
-        )}
+      {status === 'loading' ? (
+        <Loading />
+      ) : (
+        <>
+          <HeroForm publishers={getPublishers()} />
+          <HeroList heroes={getHeroesToRender()} />
+        </>
+      )}
     </>
   );
 };
